@@ -15,7 +15,15 @@ function calcula(opera) {
         }else if(opera =='/'){
             resultado = num1 / num2;
         }
-        document.getElementById('resultado').textContent = "resultado:" + resultado;
+        document.getElementById('resultado').textContent="resultado: ";
+        if(resultado<0){
+            document.getElementById('cor').style.color='red';
+        }else if(resultado>0){
+            document.getElementById('cor').style.color='green';
+        }
+        document.getElementById('cor').textContent= resultado;
+
+        
 
 
 
